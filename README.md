@@ -56,12 +56,12 @@ This repository contains all frontend source code and scripts required to run th
 
 Clone the repository and serve it with any static file server:
 
-\`\`\`bash
+```bash
 git clone https://github.com/sevanial/sevanial.net.git
 cd sevanial.net
 # Use a static server of choice, e.g.:
 python -m http.server 8000
-\`\`\`
+```
 
 Open your browser at `http://localhost:8000`.
 
