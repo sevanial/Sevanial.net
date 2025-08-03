@@ -21,7 +21,7 @@
 
 ## Overview
 
-Sevanial.net is a highly optimized, modern, lightweight website designed with minimal dependencies to maximize performance—especially on resource-constrained devices like the Raspberry Pi 5. The site features smooth theme toggling, responsive mobile navigation, intelligent header behavior on scroll, back-to-top functionality, smooth anchor scrolling, and interactive server info display with copy-to-clipboard capability.
+Sevanial.net is a highly optimized, modern, lightweight JavaScript-powered website designed with minimal dependencies to maximize performance—especially on resource-constrained devices like the Raspberry Pi 5. The site features smooth theme toggling, responsive mobile navigation, intelligent header behavior on scroll, back-to-top functionality, smooth anchor scrolling, and interactive server info display with copy-to-clipboard capability.
 
 This repository contains all frontend source code and scripts required to run the website efficiently, emphasizing clean, maintainable, and accessible JavaScript.
 
@@ -56,73 +56,81 @@ This repository contains all frontend source code and scripts required to run th
 
 Clone the repository and serve it with any static file server:
 
-```bash
+\`\`\`bash
 git clone https://github.com/sevanial/sevanial.net.git
 cd sevanial.net
 # Use a static server of choice, e.g.:
 python -m http.server 8000
+\`\`\`
 
-Open your browser at http://localhost:8000.
+Open your browser at `http://localhost:8000`.
 
 No build step or dependencies required.
-Usage
 
-    Theme toggle button must have the ID theme-toggle.
+---
 
-    Mobile menu toggle button must have the ID menu-toggle, and the nav menu must have the ID nav-menu.
+## Usage
 
-    Header element should have the class .header.
-
-    Back to top button must have the ID back-to-top.
-
-    Anchor links with href starting with # will have smooth scrolling enabled automatically.
-
-    Server info toggle button should have the class .toggle-btn and server info panel the ID server-info.
-
-    Server IP display should have the ID server-ip and copy button the class .copy-btn.
+- Theme toggle button must have the ID `theme-toggle`.
+- Mobile menu toggle button must have the ID `menu-toggle`, and the nav menu must have the ID `nav-menu`.
+- Header element should have the class `.header`.
+- Back to top button must have the ID `back-to-top`.
+- Anchor links with `href` starting with `#` will have smooth scrolling enabled automatically.
+- Server info toggle button should have the class `.toggle-btn` and server info panel the ID `server-info`.
+- Server IP display should have the ID `server-ip` and copy button the class `.copy-btn`.
 
 The JavaScript automatically initializes and binds all components on page load.
-Project Structure
 
+---
+
+## Project Structure
+
+\`\`\`
 / (root)
 ├── index.php          # Main PHP file
 ├── styles.css         # CSS styling including themes and layout
 ├── script.js          # Main JavaScript file (contains all classes and logic)
 └── favicon/           # Images, icons, and other static assets
+\`\`\`
 
-Customization
+---
 
-    Themes: Modify CSS variables in your stylesheet under [data-theme="dark"] and [data-theme="light"].
+## Customization
 
-    Server IP: Change the server IP text content inside the element with id="server-ip".
+- **Themes:** Modify CSS variables in your stylesheet under `[data-theme="dark"]` and `[data-theme="light"]`.
+- **Server IP:** Change the server IP text content inside the element with `id="server-ip"`.
+- **Embed Videos:** Call `loadYouTube()` or `loadTwitch()` to lazy-load embedded content in designated containers.
 
-    Embed Videos: Call loadYouTube() or loadTwitch() to lazy-load embedded content in designated containers.
+---
 
-Accessibility
+## Accessibility
 
-    Keyboard navigation is supported for interactive elements.
+- Keyboard navigation is supported for interactive elements.
+- `aria-expanded` and other ARIA attributes can be added to menu toggles for enhanced screen reader support.
+- Feedback messages for copy operations use polite, visually distinct notifications.
 
-    aria-expanded and other ARIA attributes can be added to menu toggles for enhanced screen reader support.
+---
 
-    Feedback messages for copy operations use polite, visually distinct notifications.
+## Performance
 
-Performance
+- Scroll events are throttled/debounced and use `requestAnimationFrame` to minimize layout thrashing.
+- Page Visibility API pauses animations when the tab is inactive to save CPU.
+- Performance marks and measurements can be logged in the console for development insights.
 
-    Scroll events are throttled/debounced and use requestAnimationFrame to minimize layout thrashing.
+---
 
-    Page Visibility API pauses animations when the tab is inactive to save CPU.
-
-    Performance marks and measurements can be logged in the console for development insights.
-
-Disclaimer
+## Disclaimer
 
 This project was generated with the assistance of AI (Claude.ai). Sevanial provided the direction, structure, review, and content decisions while the AI produced much of the actual source code. As such, it is shared for educational and inspirational purposes and may require further validation or customization in production environments.
 
 You are welcome to use, modify, and redistribute the code under the terms of the included license.
-Contact
 
-Created and maintained by Sevanial
-🌐 https://sevanial.net
-🔗 GitHub: https://github.com/sevanial/sevanial.net
+---
+
+## Contact
+
+Created and maintained by Sevanial  
+🌐 https://sevanial.net  
+🔗 GitHub: https://github.com/sevanial/sevanial.net  
 
 Thank you for checking out Sevanial.net! 🚀
