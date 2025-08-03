@@ -52,7 +52,7 @@ $social_links = [
     'bluesky' => 'https://bsky.app/profile/sevanial.bsky.social',
     'github' => 'https://github.com/sevanial',
     'email' => 'mailto:sevanial@sevanial.net',
-    'paypal' => 'https://paypal.me/SevanialsPlayground'
+    'kofi' => 'https://ko-fi.com/sevanial'
 ];
 
 // 🕒 STREAM SCHEDULE
@@ -333,9 +333,9 @@ $stream_schedule = [
                     <div class="support-section">
                         <h3>Support My Work</h3>
                         <p>Like what I do? Consider supporting my projects and server hosting costs!</p>
-                        <a href="<?php echo htmlspecialchars($social_links['paypal']); ?>" class="btn btn-support" target="_blank" rel="noopener noreferrer">
+                        <a href="<?php echo htmlspecialchars($social_links['kofi']); ?>" class="btn btn-support" target="_blank" rel="noopener noreferrer">
                             <svg viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-                            Support via PayPal
+                            Support via Ko-fi
                         </a>
                     </div>
                 </div>
@@ -353,7 +353,7 @@ $stream_schedule = [
                 </div>
                 <div class="footer-links">
                     <a href="<?php echo htmlspecialchars($social_links['github']); ?>" target="_blank" rel="noopener noreferrer">Source Code</a>
-                    <a href="<?php echo htmlspecialchars($social_links['paypal']); ?>" target="_blank" rel="noopener noreferrer">Support</a>
+                    <a href="<?php echo htmlspecialchars($social_links['kofi']); ?>" target="_blank" rel="noopener noreferrer">Support</a>
                 </div>
             </div>
         </div>
