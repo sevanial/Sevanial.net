@@ -111,14 +111,6 @@ The JavaScript automatically initializes and binds all components on page load.
 
 ---
 
-## Performance
-
-- Scroll events are throttled/debounced and use `requestAnimationFrame` to minimize layout thrashing.
-- Page Visibility API pauses animations when the tab is inactive to save CPU.
-- Performance marks and measurements can be logged in the console for development insights.
-
----
-
 ## Disclaimer
 
 This project was generated with the assistance of AI (Claude.ai). Sevanial provided the direction, structure, review, and content decisions while the AI produced much of the actual source code. As such, it is shared for educational and inspirational purposes and may require further validation or customization in production environments.
