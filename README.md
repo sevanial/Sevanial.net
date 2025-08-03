@@ -21,16 +21,16 @@
 
 ## Overview
 
-Sevanial.net is a highly optimized, modern, lightweight JavaScript-powered website designed with minimal dependencies to maximize performance, especially on resource-constrained devices like the Raspberry Pi 5. The site features smooth theme toggling, responsive mobile navigation, intelligent header behavior on scroll, back-to-top functionality, smooth anchor scrolling, and interactive server info display with copy-to-clipboard capability.
+Sevanial.net is a highly optimized, modern, lightweight website designed with minimal dependencies to maximize performance—especially on resource-constrained devices like the Raspberry Pi 5. The site features smooth theme toggling, responsive mobile navigation, intelligent header behavior on scroll, back-to-top functionality, smooth anchor scrolling, and interactive server info display with copy-to-clipboard capability.
 
-This repository contains all frontend source code and scripts required to run the website efficiently, with an emphasis on clean, maintainable, and accessible JavaScript.
+This repository contains all frontend source code and scripts required to run the website efficiently, emphasizing clean, maintainable, and accessible JavaScript.
 
 ---
 
 ## Features
 
 - **Dark/Light Theme Toggle**  
-  Persistent user theme preference stored in localStorage with smooth transition animations.
+  Persistent user theme preference stored in `localStorage` with smooth transition animations.
 
 - **Mobile Navigation Menu**  
   Responsive toggleable menu with outside-click and link-click auto-close behavior.
@@ -39,25 +39,16 @@ This repository contains all frontend source code and scripts required to run th
   Header hides/shows based on scroll direction and adds style classes on scroll thresholds.
 
 - **Back to Top Button**  
-  Visible after scrolling down, with keyboard accessibility and smooth scroll.
+  Visible after scrolling down, with keyboard accessibility and smooth scrolling.
 
 - **Smooth Scrolling for Anchor Links**  
-  Enables smooth transition when navigating internal page anchors.
+  Enables smooth transitions when navigating internal page anchors.
 
 - **Server Info Panel Toggle**  
   Interactive toggle to reveal or hide server information panel.
 
 - **Copy Server IP**  
-  One-click copy-to-clipboard with fallback support and visual feedback notification.
-
-- **Performance Monitoring**  
-  Basic usage of Performance API to log page load timing for optimization insights.
-
-- **Page Visibility API**  
-  Pauses/resumes animations based on page visibility to improve performance.
-
-- **Global Error Handling**  
-  Logs JavaScript errors and unhandled promise rejections for debugging.
+  One-click copy-to-clipboard with fallback support and visual feedback notifications.
 
 ---
 
@@ -84,7 +75,7 @@ Usage
 
     Back to top button must have the ID back-to-top.
 
-    Anchor links with hrefs starting with # will have smooth scrolling enabled automatically.
+    Anchor links with href starting with # will have smooth scrolling enabled automatically.
 
     Server info toggle button should have the class .toggle-btn and server info panel the ID server-info.
 
@@ -119,7 +110,7 @@ Performance
 
     Scroll events are throttled/debounced and use requestAnimationFrame to minimize layout thrashing.
 
-    Page Visibility API pauses animations when tab is inactive to save CPU.
+    Page Visibility API pauses animations when the tab is inactive to save CPU.
 
     Performance marks and measurements can be logged in the console for development insights.
 
@@ -134,4 +125,4 @@ Created and maintained by Sevanial
 🌐 https://sevanial.net
 🔗 GitHub: https://github.com/sevanial/sevanial.net
 
-    Thank you for checking out Sevanial.net! 🚀
+Thank you for checking out Sevanial.net! 🚀
