@@ -85,13 +85,13 @@ The JavaScript automatically initializes and binds all components on page load.
 
 ## Project Structure
 
-\`\`\`
+```
 / (root)
 ├── index.php          # Main PHP file
 ├── styles.css         # CSS styling including themes and layout
 ├── script.js          # Main JavaScript file (contains all classes and logic)
 └── favicon/           # Images, icons, and other static assets
-\`\`\`
+```
 
 ---
 
