@@ -132,6 +132,6 @@ Contact
 
 Created and maintained by Sevanial
 🌐 https://sevanial.net
-🔗 GitHub: https://github.com/yourusername/sevanial.net
+🔗 GitHub: https://github.com/sevanial/sevanial.net
 
     Thank you for checking out Sevanial.net! 🚀
