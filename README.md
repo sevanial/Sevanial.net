@@ -181,17 +181,6 @@ For full functionality, deploy to PHP-enabled hosting:
 - VPS with Apache/Nginx
 - Raspberry Pi with LAMP stack
 
-## 🤝 Contributing
-
-While this is a personal website, contributions are welcome:
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
-Please note that major changes may be declined to maintain the site's personal nature.
-
 ## 📜 License
 
 This project is open source and available under the [MIT License](LICENSE).
